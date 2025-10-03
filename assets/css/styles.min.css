@@ -15721,7 +15721,7 @@ textarea.form-control-lg {
   border-radius: 50%;
   transform: scale(0);
   background: rgba(0, 0, 0, 0.2); /* Material UI style halka bg */
-  animation: ripple 600ms linear;
+  animation: ripple 800ms linear;
   pointer-events: none;
 }
 
