@@ -2232,7 +2232,7 @@
       const data = await res.json();
 
       // Weather data inject
-      document.getElementById("temperature").innerHTML = data.current.temp_c + "<sup>°</sup>";
+      document.getElementById("temperature").innerHTML = data.current.temp_c + "<sup>°C</sup>";
       document.getElementById("location").innerText = `${data.location.name}, ${data.location.country}`;
       document.getElementById("day").innerText = new Date().toLocaleDateString("en-US", { weekday: 'long' });
       document.getElementById("wind").innerText = data.current.wind_dir + " " + data.current.wind_mph + " mph";
@@ -2282,7 +2282,7 @@
       const data = await res.json();
 
       // Update weather info
-      document.getElementById("mini-temp").innerHTML = data.current.temp_c + "°C";
+      document.getElementById("mini-temp").innerHTML = data.current.temp_c + "<sup>°C</sup>";
       document.getElementById("mini-location").innerText = data.location.name;
       document.getElementById("mini-day").innerText = new Date().toLocaleDateString("en-US", { weekday: 'long' });
       document.getElementById("mini-weather-icon").src = "https:" + data.current.condition.icon;
